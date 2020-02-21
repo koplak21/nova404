@@ -3,7 +3,7 @@
 sandi="2002"
 while [ "$masukan" != "$sandi" ]
 do
-    echo "Masukan sandi anda :" masukan
+    read -p "Masukan sandi anda :" masukan
 done
 
 echo "Selamat Datang Bosku"
