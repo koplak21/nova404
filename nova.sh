@@ -8,8 +8,7 @@ done
 
 echo "Selamat Datang Bosku"
 sleep 2
-echo "Silahkan pilih yang mau diinstal"
-echo "________________________________"
+echo "Silahkan pilih yang mau diinstall"
 echo "(1)Install Wifi-Phisher
 echo "(2)Install Wifi-Hacker
 echo "(3)Install DarkFb
