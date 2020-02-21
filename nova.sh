@@ -9,6 +9,7 @@ done
 echo "Selamat Datang Bosku"
 echo "Silahkan pilih yang mau diinstall"
 echo "_______________________________"
+echo ""
 echo "(1)Install Wifi-Phisher"
 echo "(2)Install Wifi-Hacker"
 echo "(3)Install DarkFb"
@@ -21,11 +22,12 @@ if [ $pilih = "1" ]
 then
     echo "Installing Wifi-Phisher"
     cd $HOME
-    apt-get update && apt-get upgrade
     apt-get install git
     apt-get install python python-pip python-setuptools
     pip install scapy
     git clone https://github.com/wifiphisher/wifiphisher.git
+    cd wifiphisher
+    python setup.py install
     echo "Penginstallan Selesai"
 elif [ $pilih = "2" ]
 then
@@ -48,9 +50,9 @@ then
     apt update && apt upgrade -y
     pkg install git
     pkg install python2
+    git clone https://github.com/storiku/darkfb
     pip2 install requests
     pip2 install mechanize
-    git clone https://github.com/storiku/darkfb
     echo "Penginstallan selesai"
 elif [ $pilih = "4" ]
 then
@@ -76,6 +78,7 @@ elif [ $pilih = "00" ]
 then
     echo "exit"
     echo "__________________"
+    echo ""
     echo "TERIMA KASIH BOSKU"
     echo "__________________"
     sleep 2
